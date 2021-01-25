@@ -16,7 +16,9 @@ Class Hello
     {
         $name = $request->getAttribute('name');
 
-        $response->getBody()->write("Bye, $name");
+        $sec_name = $this->c->session->t6;
+
+        $response->getBody()->write("Bye, ${name}, ${sec_name}");
 
         return $response;
     }
