@@ -8,6 +8,7 @@ Class Hello
 
     public function __construct($c)
     {
+        //
         $this->c = $c;
     }
 
